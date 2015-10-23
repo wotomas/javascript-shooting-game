@@ -58,13 +58,21 @@ function setHighScoreTable(table) {
 //
 // This function adds a high score entry to the text node
 //
-function addHighScore(record, node) {
+function addHighScore(record, node, rank) {
     // Create the name text span
     var name = svgdoc.createElementNS("http://www.w3.org/2000/svg", "tspan");
-
+	//console.log("The person is ranked on: " + rank);
+	
     // Set the attributes and create the text
 	name.setAttribute("x", 80);
     name.setAttribute("dy", 28);
+	
+	//set color if ranked top of 5
+	if(rank < 5) {
+		name.setAttribute("style", "fill:red");
+	}
+	
+	
     name.appendChild(document.createTextNode(record.name));
 	
     // Add the name to the text node
@@ -73,6 +81,11 @@ function addHighScore(record, node) {
     // Create the score text span
     var score = svgdoc.createElementNS("http://www.w3.org/2000/svg", "tspan");
 
+	//set color if ranked top of 5
+	if(rank < 5) {
+		score.setAttribute("style", "fill:red");
+	}
+	
     // Set the attributes and create the text
     score.setAttribute("x", 400);
     score.appendChild(document.createTextNode(record.score));
@@ -98,7 +111,7 @@ function showHighScoreTable(table) {
         if (i >= table.length) break;
 
         // Add the record at the end of the text node
-        addHighScore(table[i], node);
+        addHighScore(table[i], node, i);
     }
 }
 
