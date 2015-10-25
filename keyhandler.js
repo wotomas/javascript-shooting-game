@@ -24,7 +24,8 @@ function keydown(evt) {
 			}
             break;
 		case 32:
-			if (canShoot) {
+			if (bullet_number < 8 && canShoot) {
+				svgdoc.getElementById("bulletcount").textContent = (7 - bullet_number).toString() + " /  8";
 				shootBullet();
 			}
 			break;
