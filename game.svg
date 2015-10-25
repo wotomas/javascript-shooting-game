@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="1200px" height="600px"
+<svg width="1200px" height="900px"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xhtml="http://www.w3.org/1999/xhtml"
      xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -8,9 +8,133 @@
 
   <defs>
     <clipPath id="gameareaclip">
-      <rect x="20" y="20" width="1000" height="560" />
+      <rect x="20" y="20" width="1000" height="860" />
     </clipPath>
-	
+	<pattern id="platform_pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+		<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40"
+   height="40"
+   id="svg3123"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs3125" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="75.805553"
+     inkscape:cy="-5.5343746"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1511"
+     inkscape:window-height="873"
+     inkscape:window-x="1911"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3128">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1012.3622)">
+    <rect
+       style="fill:#aac43c;fill-opacity:1;stroke:#000000;stroke-width:0.41937277;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3131"
+       width="19.580627"
+       height="9.5806274"
+       x="20.209686"
+       y="1042.5719" />
+    <rect
+       style="fill:#aac43c;fill-opacity:1;stroke:#000000;stroke-width:0.41937277;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3131-9"
+       width="19.580627"
+       height="9.5806274"
+       x="0.20968638"
+       y="1042.5719" />
+    <rect
+       style="fill:#aac43c;fill-opacity:1;stroke:#000000;stroke-width:0.41937277;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3131-3"
+       width="19.580627"
+       height="9.5806274"
+       x="10.209686"
+       y="1032.5719" />
+    <rect
+       style="fill:#aac43c;fill-opacity:1;stroke:#000000;stroke-width:0.41937277;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3131-1"
+       width="19.580627"
+       height="9.5806274"
+       x="20.209686"
+       y="1022.5719" />
+    <rect
+       style="fill:#aac43c;fill-opacity:1;stroke:#000000;stroke-width:0.41937277;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3131-1-0"
+       width="19.580627"
+       height="9.5806274"
+       x="0.20968638"
+       y="1022.5719" />
+    <rect
+       style="fill:#aac43c;fill-opacity:1;stroke:#000000;stroke-width:0.41937277;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3131-1-9"
+       width="19.580627"
+       height="9.5806274"
+       x="10.209686"
+       y="1012.5719" />
+    <rect
+       style="fill:#aac43c;fill-opacity:1;stroke:#000000;stroke-width:0.41937277;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3131-1-7"
+       width="19.580627"
+       height="9.5806274"
+       x="-9.7903137"
+       y="1032.5719" />
+    <rect
+       style="fill:#aac43c;fill-opacity:1;stroke:#000000;stroke-width:0.41937277;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3131-1-2"
+       width="19.580627"
+       height="9.5806274"
+       x="30.209686"
+       y="1032.5719" />
+    <rect
+       style="fill:#aac43c;fill-opacity:1;stroke:#000000;stroke-width:0.41937277;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3131-1-4"
+       width="19.580627"
+       height="9.5806274"
+       x="30.209686"
+       y="1012.5719" />
+    <rect
+       style="fill:#aac43c;fill-opacity:1;stroke:#000000;stroke-width:0.41937277;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3131-1-6"
+       width="19.580627"
+       height="9.5806274"
+       x="-9.7903137"
+       y="1012.5719" />
+  </g>
+</svg>
+	</pattern>
 	
     <pattern id="background_pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
       <svg
@@ -305,7 +429,6 @@
     </g>
   </g>
 </svg>
-
     </pattern>
 	
 	
@@ -2066,7 +2189,8 @@
 		   id="svg2"
 		   version="1.1"
 		   inkscape:version="0.48.0 r9654"
-		   sodipodi:docname="arrow.svg">
+		   sodipodi:docname="
+		   .svg">
 		  <defs
 			 id="defs4" />
 		  <sodipodi:namedview
@@ -2122,24 +2246,14 @@
 	
   </defs>
 
-  <rect width="100%" height="100%" style="fill:url(#background_pattern);stroke:orange;stroke-width:4" />
+  <rect width="100%" height="100%" style="fill:url(#background_pattern);stroke:green;stroke-width:4" />
 
-  <rect x="20" y="20" width="1000" height="560" style="fill:black;stroke:red;stroke-width:5" />
-
-	<g id="highscoretable" transform="translate(140,40)">
-	  <rect width="520" height="480"
-	   style="fill:white;stroke:red;stroke-width:2"/>
-	  <text x="260" y="40"
-	   style="fill:red;font-size:30px;font-weight:bold;text-anchor:middle">
-		High Score Table
-	  </text>
-	  <text id="highscoretext" y="45"
-	   style="font-size: 20px;font-weight:bold"/>
-	</g>
-
+  <rect x="20" y="20" width="1000" height="560" style="fill:black;stroke:green;stroke-width:5" />
+ 
+	  
   <g onclick="top.setZoom()" transform="translate(1040, 20)">
-    <rect x="0" y="0" width="140" height="40" style="fill:white;stroke:red;stroke-width:2" />
-    <text x="70" y="28" style="fill:red;font-size:25px;text-anchor:middle">Zoom</text>
+    <rect x="0" y="0" width="140" height="40" style="fill:white;stroke:green;stroke-width:2" />
+    <text x="70" y="28" style="fill:green;font-size:25px;text-anchor:middle">Zoom</text>
   </g>
   
 	<g transform="translate(1040, 120)">
@@ -2151,21 +2265,30 @@
 	  <text id="score" x="70" y="36"
 	   style="fill:orange;font-size:25px;text-anchor:middle">0</text>
 	</g>
+	
+	<g transform="translate(1040, 220)">
+	  <text x="70" y="0"
+	   style="fill:orange;font-size:25px;font-weight:bold;text-anchor:middle">
+		Bullets
+	  </text>
+	  <rect x="0" y="10" width="140" height="35" style="fill:white" />
+	  <text id="bulletcount" x="70" y="36"
+	   style="fill:orange;font-size:25px;text-anchor:middle">8 / 8</text>
+	</g>
 
 	<g style="clip-path:url(#gameareaclip)">
 		<g transform="translate(20,20)">
-			<g id="gamearea" transform="translate(0,0)" width="600" height="560">
-				<rect x="0" y="0" width="1000" height="560" style="fill:rect" />
-				<image x="0" y="0" width="1000" height="560" xlink:href="background.png" />
+			<g id="gamearea" transform="translate(0,0)" width="600" height="860">
+				<rect x="0" y="0" width="1000" height="860" style="fill:rect" />
+				<image x="0" y="0" width="1000" height="860" xlink:href="background.png" />
 
 				<g id="platforms">
 					<!-- 60 -->
 					<!-- lower floor -->
-					<rect style="fill:orange" width="1000" height="20" x="0" y="540"/>
-					
+					<rect width="1000" height="20" x="0" y="840" style="fill:url(#platform_pattern)" />
 					
 					<!-- middle floor -->
-					<rect style="fill:orange" width="1000" height="20" x="0" y="240"/>
+					<rect width="1000" height="20" x="0" y="380" style="fill:url(#platform_pattern)" />
 				</g>
 
 				<!--add monsters to the gamearea-->
@@ -2855,10 +2978,14 @@
 	</g>
 	
 	<g id="high_score_table" transform="translate(40,40)">
-		<rect width="960" height="510" style="fill:white;stroke:red;stroke-width:2"/>
-		<text x="480" y="40" style="fill:red;font-size:30px;font-weight:bold;text-anchor:middle">
+		<rect width="960" height="810" style="fill:white;stroke:green;stroke-width:2"/>
+		<text x="480" y="40" style="fill:green;font-size:30px;font-weight:bold;text-anchor:middle">
 			High Score Table
 		</text>
-		<text id="game_over_text" y="45" style="font-size: 20px;font-weight:bold"/>
+		<text id="game_over_text" y="65" style="font-size: 40px;font-weight:bold"/>
+		<g id="restart" onclick="top.restart(evt)" transform="translate(400, 670)">
+			<rect x="0" y="0" width="180" height="40" style="fill:honeydew;stroke:green;stroke-width:2" />
+			<text x="90" y="30" style="fill:green;font-size:30px;font-weight:bold;text-anchor:middle">Play Again</text>
+        </g>
 	</g>
 </svg>
