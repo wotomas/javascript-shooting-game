@@ -2,7 +2,7 @@
 // Below are constants used in the game
 //
 var PLAYER_SIZE = new Size(40, 40);         // The size of the player
-var SCREEN_SIZE = new Size(1000, 560);       // The size of the game screen
+var SCREEN_SIZE = new Size(1000, 860);       // The size of the game screen
 var PLAYER_INIT_POS  = new Point(0, 420);   // The initial position of the player
 var MONSTER_INIT_POS = [];
 var MONSTER_ON_PLATFORM = [];
@@ -28,7 +28,8 @@ var canShoot = true;                        // A flag indicating whether the pla
 
 var MONSTER_SIZE = new Size(40, 40);        // The speed of a bullet
 var PLAYER_FACE_RIGHT = true;
-
+var STAGE = 1;
+var MONSTER_COUNT = 0;
 
 //
 // Variables in the game
@@ -44,7 +45,6 @@ var bullet = [];
 var bullet_number = 0;
 var score = 0;
 var PLAYER_NAME = "Anonymous";
-
 
 //
 // The load function for the SVG document
@@ -80,11 +80,21 @@ function load(evt) {
     //createMonster(200, 500);
     //createMonster(240, 500);
 	//createMonster(280, 500);
-	createMonster(0, 320, 400);
 	
-	createMonster(1, 420, 350);
+	if(STAGE == 1) MONSTER_COUNT = 6;
+	if(STAGE == 2) MONSTER_COUNT = 10;
+	if(STAGE == 3) MONSTER_COUNT = 14;
 	
-	createMonster(2, 620, 100);
+	for(var i = 0;i < MONSTER_COUNT ; i++) {
+		if(i < MONSTER_COUNT / 2) {
+			createMonster(i, parseFloat(150 + Math.random() * 920), parseFloat(Math.random() * 200));
+		} else {
+			createMonster(i, parseFloat(150 + Math.random() * 920), parseFloat(380 + Math.random() * 200));
+		}
+		
+			
+	}
+	
 	
 	
     svgdoc.getElementById("high_score_table").setAttribute("style", "visibility:hidden");
@@ -93,6 +103,42 @@ function load(evt) {
     gameInterval = setInterval("gamePlay()", GAME_INTERVAL);
 	
 	monsterMoveInterval = setInterval("setMonsterMove()", 3000);
+	
+	/**
+	//for debugging highscore
+	var table = getHighScoreTable();
+	showHighScoreTable(table);   
+	**/
+}
+function clearMemory() {
+	gameInterval = null;
+	monsterMoveInterval = null;
+	svgdoc = null;                          // SVG root document node
+	player = null;                          // The player object
+	monsters = [];
+	gameInterval = null;                    // The interval
+	zoom = 2.0;                             // The zoom level of the screen
+	bullet = [];
+	bullet_number = 0;
+	score = 0;
+	PLAYER_NAME = "Anonymous";
+	STAGE = 1;
+	MONSTER_COUNT = 0;
+	score = 0;
+}
+
+function restart(evt) {
+	console.log("Game Restarted");
+	//clear Highscore
+	
+	//clear player
+	player = null;
+	
+	//hide end screen
+    svgdoc.getElementById("high_score_table").setAttribute("visibility", "hidden");
+	
+	//re-load
+	load(evt);
 }
 
 //
@@ -137,7 +183,8 @@ function shootBullet() {
 	// Disable shooting for a short period of time
 	canShoot = false;
     setTimeout("canShoot = true", SHOOT_INTERVAL);
-
+	bullet_number += 1;
+	
     // Create the bullet by createing a use node
     var bullet = svgdoc.createElementNS("http://www.w3.org/2000/svg", "use");
 
@@ -251,7 +298,7 @@ function collisionDetection() {
         }
     }
 	
-	svgdoc.getElementById("score").textContent=score;
+	svgdoc.getElementById("score").textContent=score;	
 }
 
 
