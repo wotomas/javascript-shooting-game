@@ -25,7 +25,7 @@ function getHighScoreTable() {
 		
         // Extract the name and score of the player from the cookie value
 		var extractedData = cookie.split("~");
-		console.log(extractedData);
+		//console.log(extractedData);
 		
         // Add a new score record at the end of the array
 		table.push(new ScoreRecord(extractedData[0],extractedData[1]));
@@ -59,13 +59,15 @@ function setHighScoreTable(table) {
 // This function adds a high score entry to the text node
 //
 function addHighScore(record, node, rank) {
-    // Create the name text span
+   //create a rect button to add under 
+      
+   // Create the name text span
     var name = svgdoc.createElementNS("http://www.w3.org/2000/svg", "tspan");
 	//console.log("The person is ranked on: " + rank);
 	
     // Set the attributes and create the text
 	name.setAttribute("x", 80);
-    name.setAttribute("dy", 28);
+    name.setAttribute("dy", 48);
 	
 	//set color if ranked top of 5
 	if(rank < 5) {
@@ -87,7 +89,7 @@ function addHighScore(record, node, rank) {
 	}
 	
     // Set the attributes and create the text
-    score.setAttribute("x", 400);
+    score.setAttribute("x", 700);
     score.appendChild(document.createTextNode(record.score));
 
     // Add the name to the text node
