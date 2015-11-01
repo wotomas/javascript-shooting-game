@@ -23,10 +23,25 @@ function keydown(evt) {
 				jumptwice = true;
 			}
             break;
+		case "C".charCodeAt(0):
+			//cheat mode
+			console.log("Cheat mode ON!");
+			CHEAT_MODE = true;
+			break;
+		case "V".charCodeAt(0):
+			console.log("Cheat mode OFF!");
+			CHEAT_MODE = false;
+			break;
 		case 32:
-			if (bullet_number < 8 && canShoot) {
+			if(CHEAT_MODE) {
+				bullet_number--;
 				svgdoc.getElementById("bulletcount").textContent = (7 - bullet_number).toString() + " /  8";
 				shootBullet();
+			} else {
+				if (bullet_number < 8 && canShoot) {
+					svgdoc.getElementById("bulletcount").textContent = (7 - bullet_number).toString() + " /  8";
+					shootBullet();
+				}
 			}
 			break;
 	//add a case to shoot bullet
