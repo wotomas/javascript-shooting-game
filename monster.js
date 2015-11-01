@@ -1,10 +1,16 @@
-function Monster(node, x, y) {
+function Monster(node, x, y, shootable) {
     this.node = node;
     this.position = new Point(x,y);
     this.motion = motionType.NONE;
     this.verticalSpeed = 0;
 	this.horizontalSpeed = parseFloat(Math.random() * 4) + 1;
+	this.canShoot = shootable;
+	this.direction = motionType.LEFT;
 }
+
+
+
+
 
 
 Monster.prototype.isOnPlatform = function() {
